@@ -65,6 +65,9 @@ public class Picture
         campo.makeVisible();
         
         
+        sun.slowMoveVertical(90);
+        
+        
         
     
         
