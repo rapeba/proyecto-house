@@ -102,13 +102,18 @@ public class Picture
         }
     }
     /**
-     * mueve el sol
+     * move the sun
      */
     public void moveSun()
     {
         if (wall != null)   // only if it's painted already...
         {
             sun.slowMoveVertical(90);
+            campo.changeColor("black"); 
+            sun.changeColor("black");
+            wall.changeColor("black");
+            roof.changeColor("black");
+            window.changeColor("white");
             
         }
     }
