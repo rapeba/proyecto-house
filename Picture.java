@@ -163,9 +163,65 @@ public class Picture
      */
     public void moveFigures()
     {
-        if (wall != null)   // only if it's painted already...
+        wall = new Square();
+        wall.moveHorizontal(-140);
+        wall.moveVertical(20);
+        wall.changeSize(120);
+        wall.makeVisible();
         
-        {
+        window = new Square();
+        window.changeColor("black");
+        window.moveHorizontal(-120);
+        window.moveVertical(40);
+        window.changeSize(40);
+        window.makeVisible();
+
+        roof = new Triangle();  
+        roof.changeSize(60, 180);
+        roof.moveHorizontal(20);
+        roof.moveVertical(-60);
+        roof.makeVisible();
+
+        sun = new Circle();
+        sun.changeColor("yellow");
+        sun.moveHorizontal(100);
+        sun.moveVertical(-40);
+        sun.changeSize(80);
+        sun.makeVisible();
+        
+        
+        campo = new Circle();
+        campo.changeColor("green");
+        campo.moveHorizontal(-820);
+        campo.moveVertical(130);
+        campo.changeSize(1600);
+        campo.makeVisible();
+        
+        
+        
+        
+        
+            persona = new Person();
+            persona.makeVisible();
+            persona.moveHorizontal(-250);
+            persona.moveVertical(20);
+            persona.moveHorizontal(130);
+            
+            
+            circulo = new Circle();
+            cuadrado = new Square();
+            triangulo = new Triangle();
+            circulo.makeVisible();
+            cuadrado.makeVisible();
+            triangulo.makeVisible();
+            circulo.changeSize(20);
+            cuadrado.changeSize(20);
+            triangulo.changeSize(20,20);
+            circulo.moveHorizontal(120);
+            cuadrado.moveHorizontal(120);
+            triangulo.moveHorizontal(120);
+         
+        
             circulo.slowMoveHorizontal(40);
             cuadrado.slowMoveHorizontal(40);
             triangulo.slowMoveHorizontal(40);
@@ -178,5 +234,5 @@ public class Picture
             circulo.slowMoveVertical(-40);
             cuadrado.slowMoveVertical(-40);
             triangulo.slowMoveVertical(-40);
-}}}
+}}
 
