@@ -17,6 +17,9 @@ public class Picture
     private Circle sun;
     private Circle campo;
     private Person persona;
+    private Circle circulo;
+    private Triangle triangulo;
+    private Square cuadrado;
 
     /**
      * Constructor for objects of class Picture
@@ -134,4 +137,46 @@ public class Picture
             
 }
 }
-}
+ /**
+     * create circle, square, triangle
+     */
+    public void createFigures()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            circulo = new Circle();
+            cuadrado = new Square();
+            triangulo = new Triangle();
+            circulo.makeVisible();
+            cuadrado.makeVisible();
+            triangulo.makeVisible();
+            circulo.changeSize(20);
+            cuadrado.changeSize(20);
+            triangulo.changeSize(20,20);
+            circulo.moveHorizontal(120);
+            cuadrado.moveHorizontal(120);
+            triangulo.moveHorizontal(120);
+         
+}}
+/**
+     * move circle, square,triangle
+     */
+    public void moveFigures()
+    {
+        if (wall != null)   // only if it's painted already...
+        
+        {
+            circulo.slowMoveHorizontal(40);
+            cuadrado.slowMoveHorizontal(40);
+            triangulo.slowMoveHorizontal(40);
+            circulo.slowMoveVertical(40);
+            cuadrado.slowMoveVertical(40);
+            triangulo.slowMoveVertical(40);
+            circulo.slowMoveHorizontal(-40);
+            cuadrado.slowMoveHorizontal(-40);
+            triangulo.slowMoveHorizontal(-40);
+            circulo.slowMoveVertical(-40);
+            cuadrado.slowMoveVertical(-40);
+            triangulo.slowMoveVertical(-40);
+}}}
+
