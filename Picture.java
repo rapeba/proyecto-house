@@ -101,4 +101,15 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    /**
+     * mueve el sol
+     */
+    public void moveSun()
+    {
+        if (wall != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(90);
+            
+        }
+    }
 }
